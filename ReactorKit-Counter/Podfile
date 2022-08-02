@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ReactorKit-Counter' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ReactorKit-Counter
+  pod 'ReactorKit'
+  pod 'RxSwift', '6.5.0'
+  pod 'RxCocoa', '6.5.0'
+  pod 'SnapKit', '~> 5.6.0'
+  pod 'Then'
+
+  target 'ReactorKit-CounterTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ReactorKit-CounterUITests' do
+    # Pods for testing
+  end
+
+end
